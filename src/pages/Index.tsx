@@ -1,11 +1,17 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import RotatingCube from "../components/RotatingCube";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="relative w-full h-screen bg-gradient-to-br from-gray-900 to-black">
+      <RotatingCube />
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
+        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+          Interactive 3D Cube
+        </h1>
+        <p className="text-lg md:text-xl text-gray-300">
+          Click and drag to rotate • Scroll to zoom
+        </p>
       </div>
     </div>
   );
